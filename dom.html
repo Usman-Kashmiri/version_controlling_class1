@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            width: 100%;
+            background-color: #111;
+        }
+        #menu-btn {
+            margin-left: 10px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        #nav {
+            list-style: none;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: #333;
+        }
+        #nav li {
+            padding: 10px 30px;
+            color: white;
+            transition: all .5s;
+            cursor: pointer;
+            user-select: none;
+        }
+        #nav li:hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <span onclick="menuBtn()" id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ul>
+    </nav>
+    <!-- Script -->
+    <script>
+        var menubtn = document.getElementById("menu-btn")
+        var nav = document.getElementById("nav")
+        nav.style.display = "none"
+        function menuBtn() {
+            if (nav.style.display == "none") {
+                nav.style.display = "block"
+            }
+            else {
+                nav.style.display = "none"
+            }
+        }
+
+    </script>
+</body>
+</html>

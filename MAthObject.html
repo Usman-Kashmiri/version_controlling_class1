@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function or Math object</title>
+</head>
+<body>
+    <div style="width: fit-content;" id="cat-img">
+        <img src="cat01.jpg" width="400px" height="400px" alt="">
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        var cats = ["cat01","cat02","cat03","cat04","cat05", "cat06"]
+
+        $('#cat-img').click(function() {
+            var cat = Math.floor(Math.random()*cats.length);
+            $(this).html('<img src="'+cats[cat]+'.jpg" width="400px" height="400px">')
+        })
+    </script>
+
+</body>
+</html>
