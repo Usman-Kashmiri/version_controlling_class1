@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 <body>
+    <nav id="navbar">
+        <span onclick="menuBtn()" id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+        <ul id="nav">
+            <a href="index.html"><li>Home</li></a>
+            <a href="dom.html"><li>Dom</li></a>
+            <a href="MAthObject.html"><li>MAth Object</li></a>
+            <a href="switchcases.html"><li>switch Cases</li></a>
+        </ul>
+    </nav>
     <div></div>
+     <!-- Script -->
+     <script>
+        var menubtn = document.getElementById("menu-btn")
+        var nav = document.getElementById("nav")
+        nav.style.display = "none"
+        function menuBtn() {
+            if (nav.style.display == "none") {
+                nav.style.display = "block"
+            }
+            else {
+                nav.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>

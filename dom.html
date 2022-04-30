@@ -6,47 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Object Model</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        #navbar {
-            width: 100%;
-            background-color: #111;
-        }
-        #menu-btn {
-            margin-left: 10px;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-        #nav {
-            list-style: none;
-            text-align: center;
-            font-size: 1.5rem;
-            background-color: #333;
-        }
-        #nav li {
-            padding: 10px 30px;
-            color: white;
-            transition: all .5s;
-            cursor: pointer;
-            user-select: none;
-        }
-        #nav li:hover {
-            color: rgba(255, 255, 255, 0.6);
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <nav id="navbar">
         <span onclick="menuBtn()" id="menu-btn"><i class="fa-solid fa-bars"></i></span>
         <ul id="nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Gallery</li>
+            <a href="index.html"><li>Home</li></a>
+            <a href="dom.html"><li>Dom</li></a>
+            <a href="MAthObject.html"><li>MAth Object</li></a>
+            <a href="switchcases.html"><li>switch Cases</li></a>
         </ul>
     </nav>
     <!-- Script -->

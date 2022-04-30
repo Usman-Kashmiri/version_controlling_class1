@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
+#navbar {
+    width: 100%;
+    background-color: #111;
+}
+#menu-btn {
+    margin-left: 10px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #333;
+}
+#nav li {
+    padding: 10px 30px;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+    user-select: none;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav li:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 body {
     background-image: url(../imgs/cat05.jpg);
 }
